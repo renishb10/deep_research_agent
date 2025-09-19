@@ -1,0 +1,15 @@
+[project]
+name = "deep-research-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.9.0",
+    "dotenv>=0.9.9",
+    "gradio>=5.46.0",
+    "isort>=6.0.1",
+    "openai-agents>=0.3.1",
+    "pydantic>=2.11.9",
+    "resend>=2.13.1",
+]
