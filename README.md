@@ -20,17 +20,7 @@ It plans searches, runs them in parallel, synthesizes findings into a clean repo
 
 ## 🧠 Architecture
 
-```mermaid
-flowchart LR
-    A[User query] --> B[planner_agent]
-    B -->|WebSearchPlan (N items)| C{async parallel}
-    C --> D1[search_agent #1]
-    C --> D2[search_agent #2]
-    C --> Dn[search_agent #N]
-    D1 & D2 & Dn --> E[writer_agent]
-    E --> F[email_agent]
-    F --> G[Markdown Report + Email Sent]
-```
+![Architecture Diagram](./static/arch.png)
 
 **Execution flow (from `ResearchManager.run`)**
 
